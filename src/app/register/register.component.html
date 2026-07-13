@@ -1,0 +1,16 @@
+<div id="loginform">
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+
+  <input type="text" formControlName="username" placeholder="username"><br><br>
+
+  
+  <input type="email" formControlName="mail" placeholder="mail"><br><br>
+
+
+  <input type="password" formControlName="password" placeholder="password"><br><br>
+
+  <input type="submit" value="signup">
+
+</form>
+</div>

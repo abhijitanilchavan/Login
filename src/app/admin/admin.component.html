@@ -1,0 +1,20 @@
+
+
+
+<table border="1">
+    <tr>
+        <th>Actions</th>
+        <th>id</th>
+        <th>username</th>
+       <th>Action</th>
+    </tr>
+    <tr *ngFor="let a of feedback">
+        <td><input type="radio" name="select"></td>
+        <td>{{a.id}}</td>
+        <td>{{a.feedback}}</td>
+        <td><button (click)="delete(a.id)">delete</button></td>
+        <td><button (click)="update(a.id)">update</button></td>
+
+        
+    </tr>
+</table>
